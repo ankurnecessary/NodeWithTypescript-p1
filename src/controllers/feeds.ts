@@ -5,5 +5,9 @@ export const getPosts = (
   res: Response,
   next: NextFunction
 ): void => {
-  res.json(['You will get the posts soon']);
+  res.json({
+    posts: [
+      { title: 'this is the first post', content: 'this is the first post' }
+    ]
+  });
 };
