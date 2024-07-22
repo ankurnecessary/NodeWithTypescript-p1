@@ -8,7 +8,7 @@ app.get('/', (req, res, next) => {
 });
 
 // Added feeds routes
-app.use(feedsRoutes);
+app.use('/feed', feedsRoutes);
 
 app.listen(5001, () => {
   console.log('Server listening to port 5001');

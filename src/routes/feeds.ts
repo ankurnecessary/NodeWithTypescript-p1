@@ -3,7 +3,7 @@ import * as feedsController from '../controllers/feeds';
 
 const router = Router();
 
-// GET http://localhost:5001/posts
+// GET /feed/posts
 router.get('/posts', feedsController.getPosts);
 
 export default router;
