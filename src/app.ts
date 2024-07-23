@@ -1,4 +1,6 @@
 import express from 'express';
+import bodyParser from 'body-parser';
+
 import feedsRoutes from './routes/feeds';
 
 const app = express();
