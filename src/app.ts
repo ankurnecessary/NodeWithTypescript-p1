@@ -6,6 +6,7 @@ import feedsRoutes from './routes/feeds';
 const app = express();
 
 // app.use(bodyParser.urlencoded()); // x-www-form-urlencoded <form>
+app.use(bodyParser.json()); // To parse the json data in the request
 
 app.get('/', (req, res, next) => {
   res.json({ text: 'You are in nodeWithTypescript-p1' });
