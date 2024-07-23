@@ -5,7 +5,8 @@ export const getPosts = (
   res: Response,
   next: NextFunction
 ): void => {
-  res.json({
+  // Http status code 200 is used to tell the client that the GET request is sucessful
+  res.status(200).json({
     posts: [
       { title: 'this is the first post', content: 'this is the first post' }
     ]
