@@ -15,3 +15,14 @@ export const getPosts = (
     ]
   });
 };
+
+export const createPost = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): void => {
+  // Here in `req` `body` property was added by `body-parser` middleware
+  const title = req.body.title;
+  const content = req.body.content;
+
+};
