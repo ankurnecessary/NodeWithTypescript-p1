@@ -25,4 +25,15 @@ export const createPost = (
   const title = req.body.title;
   const content = req.body.content;
 
+  // Create a post in database here, if needed.
+
+  // 201 - Sucessfully created
+  res.status(201).json({
+    message: 'Post created sucessfully.',
+    post: {
+      id: Number(new Date()),
+      title,
+      content
+    }
+  });
 };
