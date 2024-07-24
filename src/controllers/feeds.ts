@@ -21,6 +21,9 @@ export const createPost = (
   res: Response,
   next: NextFunction
 ): void => {
+  /*
+    While making POST request from the browser we should make sure that the `JSON.stringify()` should be used before sending the data in th `body` property of `fetch()`. Also the `content-type` should be `application/json` in request headers.
+  */
   // Here in `req` `body` property was added by `body-parser` middleware
   const title = req.body.title;
   const content = req.body.content;
